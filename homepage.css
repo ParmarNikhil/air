@@ -10,8 +10,8 @@
 
 @font-face {
     font-family: 'Dosis';
-    src: url('C:/Users/NikhilParmar/OneDrive - Infosense Pvt Ltd/Desktop/demo/fonts/Dosis-Regular.woff2') format('woff2'),
-        url('C:/Users/NikhilParmar/OneDrive - Infosense Pvt Ltd/Desktop/demo/fonts/Dosis-Regular.woff') format('woff');
+    src: url('./fonts/Dosis-Regular.woff2') format('woff2'),
+        url('./fonts/Dosis-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
