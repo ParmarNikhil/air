@@ -19,8 +19,8 @@
 
 @font-face {
     font-family: 'Dosis-Bold';
-    src: url('C:/Users/NikhilParmar/OneDrive - Infosense Pvt Ltd/Desktop/demo/fonts/Dosis-Bold.woff2') format('woff2'),
-        url('C:/Users/NikhilParmar/OneDrive - Infosense Pvt Ltd/Desktop/demo/fonts/Dosis-Bold.woff') format('woff');
+    src: url('./fonts/Dosis-Bold.woff2') format('woff2'),
+        url('./fonts/Dosis-Bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
