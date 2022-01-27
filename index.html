@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Demo</title>
     <link rel="stylesheet" href="homepage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" integrity="sha512-BnbUDfEUfV0Slx6TunuB042k9tuKe3xrD6q4mg5Ed72LTgzDIcLPxg6yI2gcMFRyomt+yJJxE+zJwNmxki6/RA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <header>
@@ -15,15 +16,16 @@
             AIR
         </a>
         <nav>
-            <ul>
-                <li><a href="#Home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#others">Others</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contactUs">Contact Us</a></li>
+            <ul id="menulist">
+                <li><a href="#Home" onclick="toggleMenu()">Home</a></li>
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#others" onclick="toggleMenu()">Others</a></li>
+                <li><a href="#services" onclick="toggleMenu()">Services</a></li>
+                <li><a href="#contactUs" onclick="toggleMenu()">Contact Us</a></li>
             </ul>
         </nav>
+        <h2 class="menu" onclick="toggleMenu()">menu</h2>
         </div>
         </div>
     </header>
@@ -116,83 +118,74 @@
             
         </div>
     </div>
-
-
-        <section class="contact-section" id="contactUs">
-            <div class="contact-section-content">
-                <div class="contact-bg">
-                    <i class="fa-solid fa-face-grin-beam"></i>
-                </div>
-                <div class="contact-form">
-                    <h2>contact us</h2>
-                    <label for="name">Name</label>
-                    <input type="text">
-                    <label for="email">email</label>
-                    <input type="email">
-                    <label for="mobile">mobile</label>
-                    <input type="number">
-                    <label for="message">Your Message</label>
-                    <textarea></textarea>
-                    <input type="button" class="btn" value="submit">
-                </div>
-            </div>
-            
-        </section>
         
         <div class="service-section" id="services">
             <div class="container">
                 <h2>services</h2>
                 <div class="service-container">
                 <div class="service-content">
+                    <span id="icon" class="fas fa-poll"> </span>
                     <h3>Marketing</h3>
                     <p>lsdfnsl dfnsdlk fnlasd nfklsdan flksdnaf l;nsdaflkn sdalk fns dl alskfdns lskd s nnk</p>
                     <a href="#">Learn More</a>
                 </div>
 
                 <div class="service-content">
-                    <h3>Search Engine</h3>
+                   <span id="icon" class="fas fa-search"> </span>                    <h3>Search Engine</h3>
                     <p>lsdfnsl dfnsdlk fnlasd nfklsdan flksdnaf l;nsdaflkn sdalk fns dl alskfdns lskd s nnk</p>
                     <a href="#">Learn More</a>
                 </div>
 
                 <div class="service-content">
-                    <h3>Earn Money</h3>
+                    <span id="icon" class="fas fa-money-bill"> </span>                    <h3>Earn Money</h3>
                     <p>lsdfnsl dfnsdlk fnlasd nfklsdan flksdnaf l;nsdaflkn sdalk fns dl alskfdns lskd s nnk</p>
                     <a href="#">Learn More</a>
                 </div>
 
                 <div class="service-content">
+                   <span id="icon" class="fas fa-poll"> </span>
                     <h3>Entrepreneur</h3>
                     <p>lsdfnsl dfnsdlk fnlasd nfklsdan flksdnaf l;nsdaflkn sdalk fns dl alskfdns lskd s nnk</p>
                     <a href="#">Learn More</a>
                 </div>
 
                 <div class="service-content">
-                    <h3>Stragic Plan</h3>
+                    <span id="icon" class="fas fa-poll"> </span>                    <h3>Stragic Plan</h3>
                     <p>lsdfnsl dfnsdlk fnlasd nfklsdan flksdnaf l;nsdaflkn sdalk fns dl alskfdns lskd s nnk</p>
                     <a href="#">Learn More</a>
                 </div>
 
                 <div class="service-content">
+                   <span id="icon" class="fas fa-phone"> </span>
                     <h3>Support</h3>
                     <p>lsdfnsl dfnsdlk fnlasd nfklsdan flksdnaf l;nsdaflkn sdalk fns dl alskfdns lskd s nnk</p>
                     <a href="#">Learn More</a>
                 </div>
 
                 <div class="service-content">
-                    <h3>Marketing</h3>
+                    <span id="icon" class="fas fa-poll"> </span>                    <h3>Marketing</h3>
                     <p>lsdfnsl dfnsdlk fnlasd nfklsdan flksdnaf l;nsdaflkn sdalk fns dl alskfdns lskd s nnk</p>
                     <a href="#">Learn More</a>
                 </div>
 
                 <div class="service-content">
-                    <h3>Marketing</h3>
+                    <span id="icon" class="fas fa-poll"> </span>                    <h3>Marketing</h3>
                     <p>lsdfnsl dfnsdlk fnlasd nfklsdan flksdnaf l;nsdaflkn sdalk fns dl alskfdns lskd s nnk</p>
                     <a href="#">Learn More</a>
                 </div>
             </div>
             </div>
         </div>
-
+        <script>
+            function toggleMenu(){
+                let menu = document.getElementById("menulist");
+                if(menu.style.display=="block"){
+                    menu.style.display="none"
+                }
+                else{
+                    menu.style.display="block"
+                }
+            }
+        </script>
 </body>
 </html>
