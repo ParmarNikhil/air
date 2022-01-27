@@ -250,28 +250,71 @@ a:hover{
     text-transform: uppercase;
     padding-top: 50px;
     font-size: 30px;
-    margin-bottom: 70px;
+    margin-bottom: 30px;
 }
 
 .service-content{
     float: left;
     width: 25%;
-    padding: 0 20px 20px 30px;
+    padding: 30px 30px 20px 10px;
+    min-height: 160px;
+    position: relative;
+    padding-left: 60px;
 }
+
+.service-content #icon{
+    width: 50px;
+    height: 50px;
+    left: 0;
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+    text-align: center;
+    padding-top: 12px;
+    font-size: 25px;
+}
+
 .service-content h3{
     padding-bottom: 10px;
 }
 
+.service-content a{
+    position: absolute;
+    bottom: 0;
+}
 .service-container{
     display: table;
+}
+.menu{
+    display: none;
 }
 
 
 @media (max-width:500px){
-    a{
+    .logo{
+        width: 50%;
+    }
+    
+    header{
+        position: fixed;
+        display: inline-block;
+    }
+
+    .menu{
+        top: 12px;
+        right: 12px;
+        position: absolute;
+        display: inline;
+        float: right;
+    }
+
+    li a{
         width: 100%;
     }
- 
+
+    ul{
+        display: none;
+    }
     li{
         width: 100%;
         text-align: center;
@@ -281,6 +324,7 @@ a:hover{
     .container .projects{
         width: 100%;
         height: 100vh;
+        margin: 0;
     }
     
     .container .projects .card{
@@ -292,9 +336,11 @@ a:hover{
         margin-bottom: 10px;
     }
 
+    
     .contact-section-content .contact-bg{
         display: none;
     }
+    
     .contact-section-content{
         display: block;
         width: 100%;
@@ -317,14 +363,28 @@ a:hover{
 
     .service-section{
         display: table;
+        width: 100%;
+        padding-bottom: 20px;
     }
     .service-section h2{
         font-size: 20px;
-        margin-bottom: 20px;
     }
     .service-content{
         width: 100%;
+        padding-left: 70px;
+        padding-right: 10px;
         padding-bottom: 50px;
+        background-color: #FFFF79;
+        margin-bottom: 20px;
+    }
+
+    .service-content a{
+        bottom: 20px;
+    }
+    
+
+    .service-content #icon{
+        left: 10px;
     }
 }
 
